@@ -1,0 +1,45 @@
+.qwiz-list-panel {
+	background-color: #00A0FF;
+	background-image: url('../images/stripe_neutral.png');
+	background-repeat: repeat;
+
+	height: 360px;
+	float:  left;
+	width: 320px;
+}
+
+.quiz-list-entry {
+	background-color: #E0E0E0;
+	background: -moz-linear-gradient(#E0E0E0, #D0D0D0);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E0E0E0), to(#D0D0D0));
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #B0B0B0;
+	float: left;
+	font-family: Helvetica, Verdana, sans-serif;
+	height: 55px;
+	padding-left: 5px;
+	padding-top: 3px;
+	width: 315px;
+}
+
+.quiz-list-entry .quiz-title {
+	color: #404040;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'MuseoSans', Tahoma, Helvetica, Verdana, sans-serif;
+	width: 315px;
+}
+
+.quiz-list-entry .quiz-author {
+	color: #606060;
+	font-size: 14px;
+	font-weight: normal;
+	width: 315px;
+}
+
+.quiz-list-entry .quiz-stats {
+	color: #808080;
+	font-size: 12px;
+	font-weight: normal;
+	width: 315px;
+}

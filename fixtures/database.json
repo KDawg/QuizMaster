@@ -1,0 +1,93 @@
+[
+    {
+        "question": "Information in a database is typically stored in this object, which consists of vertical columns and horizontal rows of similar data.",
+        "answers": [
+            "Field",
+            "Record",
+            "Table",
+            "File"
+        ],
+        "correct": 2,
+        "timeLimit": 10
+    },
+    {
+        "question": "All of the information about one entity (person, thing, place or event), is contained in this in a database.",
+        "answers": [
+            "Field",
+            "File",
+            "Table",
+            "Record"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "The smallest unit of information about a record in a database is called an attribute and is stored in a",
+        "answers": [
+            "Cell",
+            "Field",
+            "Record",
+            "Query"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "This type of database contains multiple tables that are connected to produce combined output from all tables",
+        "answers": [
+            "Bound",
+            "Linked",
+            "Relational",
+            "Joined"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "In Access this object finds and displays selected data.",
+        "answers": [
+            "Table",
+            "Form",
+            "Query",
+            "Report"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "When building a query, this is used to limit the results by some specific identifier, such as a date range.",
+        "answers": [
+            "Count",
+            "Criteria",
+            "Query",
+            "Sort"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "Queries are not used for",
+        "answers": [
+            "Viewing data in different ways",
+            "Creating new data",
+            "Correct Analyzing data",
+            "Changing existing data"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "Queries are based on this process, allowing you to use a query as the source for forms and reports.",
+        "answers": [
+            "Filters",
+            "Tables",
+            "Records",
+            "Objects"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "This identifies a record in Access in the same way a license plate number uniquely identifies a car.",
+        "answers": [
+            "Key attribute",
+            "Property Attribute",
+            "Primary Key",
+            "Key"
+        ],
+        "correct": 2
+    }
+]

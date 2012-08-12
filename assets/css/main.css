@@ -1,0 +1,223 @@
+/* http://www.stripegenerator.com/ */
+/* http://border-radius.com/ */
+
+body {
+	background-color: #FFFFFF;
+	float: left;
+	margin: 0;
+	min-height: 480px;
+	min-width: 320px;
+	padding: 0;
+	width: 320px;
+}
+
+/* http://paulirish.com/2009/bulletproof-font-face-implementation-syntax */
+@font-face {
+    font-family: 'Collator';
+    src: url('../fonts/Collator.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans_500.otf') format('opentype');
+}
+
+.hidden-page-by-default {
+    display: none;
+}
+
+.title-panel {
+	background-color: #3B5998;
+	background: -moz-linear-gradient(#3B5998, #264380);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3B5998), to(#264380));
+
+	border-top: 1px solid #b8c3d9;
+	border-bottom: 1px solid #363d4d;
+
+	float: left;
+	height: 38px;
+	width: 320px;
+}
+
+.title-panel p {
+	color: #FFFFFF;
+	font-size: 26px;
+	margin-top: 4px;
+	text-align: center;
+	text-shadow: -1px -1px 0 #000000;
+    font-family: 'Collator', Tahoma, Helvetica, Verdana, sans-serif;
+}
+
+.status {
+	background-color: #627AAD;
+	background: -moz-linear-gradient(#627AAD, #576c99);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#627AAD), to(#576c99));
+
+	border-top: 1px solid #b8c3d9;
+	border-bottom: 1px solid #0a1733;
+
+	color: #FFFFFF;
+	float: left;
+	font-family: Tahoma, Helvetica, Verdana, sans-serif;
+	font-size: 16px;
+	height: 38px;
+	padding-left: 5px;
+	width: 315px;
+}
+
+.status-quiz {
+	padding-left: 0;
+	width: 320px;
+}
+
+.stats-pair {
+	float: left;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stats-value-icon {
+	float: left;
+	margin-top: 3px;
+}
+
+.stats-value-text {
+	float: left;
+	margin-left: 7px;
+	margin-top: 2px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#correct, #wrong, #time, #number, #total, #correct_icon, #wrong_icon, #time_icon, #number_icon {
+	float: left;
+}
+
+#number {
+	float: left;
+	font-size: 14px;
+	margin-left: -7px;
+	margin-top: 7px;
+}
+
+/* TODO: I'd rather have a .question-panel with all shape/size, then this span be fonting only */
+.question-panel span {
+	background-color: #7692CC;
+	background: -moz-linear-gradient(#7692CC, #6880b3);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7692CC), to(#6880b3));
+	border-top: 1px solid #8dadf2;
+	border-bottom: 1px solid #2c374d;
+
+	color: #ffffff;
+	font-family: Tahamo, Helvetica,Verdana, sans-serif;
+	font-size: 16px;
+
+	float: left;
+	height: 78px;
+	padding-left: 5px;
+	width: 315px;
+}
+
+.answer-panel {
+	background-color: #00A0FF;
+	background-image: url('../images/stripe_neutral.png');
+	background-repeat: repeat;
+	
+	float: left;
+	height: 280px;
+	width: 320px;
+}
+
+.answer-container {
+	background-color: #7FAAFF;
+	float: left;
+	height: 70px;
+	width: 320px;
+}
+
+.answer-letter {
+	background-color: #E0E0E0;
+	background: -moz-linear-gradient(#E0E0E0, #D0D0D0);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E0E0E0), to(#D0D0D0));
+
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #B0B0B0;
+
+	float: left;
+	height: 68px;
+	padding-left: 3px;
+	text-align: center;
+	width: 47px;
+}
+
+.answer-letter p {
+	background-color: #ffffff;
+	background: -moz-linear-gradient(#f0f0f0, #ffffff);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f0f0f0));
+
+	border: 2px solid #555659;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+	color: #6880b3;
+	font-size: 48px;
+	font-weight: bold;
+	margin-top: 4px;
+	width: 40px;
+}
+
+.answer-body {
+	background-color: #E0E0E0;
+	background: -moz-linear-gradient(#E0E0E0, #D0D0D0);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E0E0E0), to(#D0D0D0));
+
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #B0B0B0;
+
+	color: #505050;
+	font-family: Tahoma, Helvetica, Verdana, sans-serif;
+	font-size: 15px;
+
+	float: left;
+	height: 68px;
+	padding-left: 5px;
+	width: 265px;
+}
+
+.footer-panel {
+	background-color: #627AAD;
+	background: -moz-linear-gradient(#627AAD, #50638c);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#627AAD), to(#50638c));
+
+	border-top: 1px solid #b8c3d9;
+	border-bottom: 1px solid #081633;
+
+	float: left;
+	height: 38px;
+	width: 320px;
+}
+
+#previous {
+	float: left;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+#next {
+	float: right;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+.answer-wrong {
+	background-color: #FFB0B0;
+	background: -moz-linear-gradient(#FFB0B0, #A00000);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFB0B0), to(#A00000));
+}
+
+.answer-correct {
+	background-color: #B0FFB0;
+	background: -moz-linear-gradient(#B0FFB0, #00A000);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B0FFB0), to(#00A000));
+}

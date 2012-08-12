@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quiz Master!</title>
+	<meta name="viewport" content="user-scalable=no, width=320"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/Button.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/LoginPage.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/QuizList.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/ResultsPage.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/loading.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div id='home-page' class='hidden-page-by-default'>
+	<div class='title-panel'>
+		<p>Kwiztastic</p>
+	</div>
+
+	<div class="status">
+		Please select a quiz from the list below
+	</div>
+
+	<div id="qwiz-list-panel" class="qwiz-list-panel"></div>
+
+	<div class="footer-panel">
+		<div id="tweet-button" class="button" onclick="Application.view.showTweet();">
+			<img src="assets/images/home.png"/>
+			<span>Tweet It!</span>
+		</div>
+	</div>
+</div>
+
+
+<div id='test-page' class='hidden-page-by-default'>
+	<div id='title' class='title-panel'>
+		<p></p>
+	</div>
+
+	<div id="status" class="status status-quiz">
+		<div class="stats-pair">
+			<div class="stats-value-icon">
+				<div id="correct_icon"><img src="assets/images/correct.png"/></div>
+			</div>
+			<div class="stats-value-text">
+				<div id="correct"></div>
+			</div>
+		</div>
+
+		<div class="stats-pair">
+			<div class="stats-value-icon">
+				<div id="wrong-icon"><img src="assets/images/wrong.png"/></div>
+			</div>
+			<div class="stats-value-text">
+				<div id="wrong"></div>
+			</div>
+		</div>
+
+		<div class="stats-pair">
+			<div class="stats-value-icon">
+				<div id="time-icon"><img src="assets/images/timer.png"/></div>
+			</div>
+			<div class="stats-value-text">
+				<div id="time"></div>
+			</div>
+		</div>
+
+		<div class="stats-pair">
+			<div class="stats-value-icon">
+				<div id="number-icon"><img src="assets/images/question.png"/></div>
+			</div>
+			<div class="stats-value-text">
+				<div id="number"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="question-panel" class="question-panel">
+	</div>
+
+	<div class="footer-panel">
+		<div id="previous"><img src="assets/images/PrevArrow.png"/></div>
+		<div id="next"><img src="assets/images/NextArrow.png"/></div>
+	</div>
+</div>
+
+
+<div id="results-page" class='hidden-page-by-default'>
+	<div id="results-title" class='title-panel'>
+		<p><%= title =></p>
+	</div>
+
+	<div class="status">
+		Congratulations, you've completed the quiz.
+	</div>
+
+	<div class="results-panel">
+		<div class="results-column">
+			<div class="results-score-header">
+				<img src="assets/images/correct.png"/>
+
+				<p>Correct</p>
+			</div>
+			<div id="ResultsCorrect" class="results-score">
+				<p></p>
+			</div>
+		</div>
+		<div class="results-center-divider"></div>
+		<div class="results-column">
+			<div class="results-score-header">
+				<img src="assets/images/question.png"/>
+
+				<p>Total</p>
+			</div>
+			<div id="ResultsTotal" class="results-score">
+				<p></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-panel">
+		<div id="results-home-button" class="button">
+			<img src="assets/images/home.png"/>
+			<span>Home</span>
+		</div>
+	</div>
+</div>
+
+
+<div id="login-page" class='hidden-page-by-default'>
+	<div class="title-panel">
+		<p>Please Sign In</p>
+	</div>
+	<div class="login-middle-panel">
+		<form action="login.php" method="post">
+			<span class="login-prompt">Username</span>
+			<input type="text" name="name" class="login-input" placeholder="Username or email"/>
+			<span class="login-prompt">Password</span>
+			<input type="password" name="password" class="login-input" placeholder="Password"/>
+		</form>
+	</div>
+	<div class="footer-panel">
+		<div id="login-prompt" class="button" onclick="Application.view.showTitle();">
+			<img src="assets/images/home.png"/>
+			<span>Login</span>
+		</div>
+	</div>
+</div>
+
+
+<div id='loading-overlay' class='hidden-page-by-default'>
+	<div class="loading-panel">
+		<div class="loading-status">
+			<p>LOADING</p>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="libs/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="libs/underscore.js"></script>
+<script type="text/javascript" src="libs/backbone.js"></script>
+
+<script type="text/javascript" src="code/models/QuizModel.js"></script>
+<script type="text/javascript" src="code/collections/QuizCollection.js"></script>
+<script type="text/javascript" src="code/views/QuizView.js"></script>
+<script type="text/javascript" src="code/views/QuizListView.js"></script>
+
+<script type="text/javascript" src="code/models/QuestionModel.js"></script>
+<script type="text/javascript" src="code/collections/QuestionCollection.js"></script>
+<script type="text/javascript" src="code/views/QuestionView.js"></script>
+<script type="text/javascript" src="code/controllers/QuizController.js"></script>
+
+<script type="text/javascript" src="code/Application.js"></script>
+<script type="text/javascript" src="code/views/ApplicationView.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		Application.initialize(jQuery);
+	});
+</script>
+
+</body>
+</html>

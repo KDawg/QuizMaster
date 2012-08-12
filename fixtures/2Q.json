@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Who created Superman?",
+        "answers": [
+            "Jack Kirby & Bob Kane",
+            "Joe Shuster & Jerry Siegel",
+            "Jerry Siegel & Stan Lee"
+        ],
+        "correct": 2,
+        "timeLimit": 15
+    },
+    {
+        "question": "What is the name of the dimensional plane where Kryptonian criminals were exiled for their crimes?",
+        "answers": [
+            "No Man's Land",
+            "Phantom Zone",
+            "Zimbardo's Prison",
+            "Bizarro World"
+        ],
+        "correct": 1,
+        "timeLimit": 35
+    }
+]

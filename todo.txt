@@ -1,0 +1,45 @@
+
+_ AppView does clever page transition using CSSTranforms
+_ Incorporate SASS converting from .CSS
+
+X ApplicationView => sits atop the entire app doing current Controller/Router for page turning
+
+X Spinner/Loading <DIV><IMG> while loading the directory & quiz
+    => http://www.ajaxload.info/
+X Spinner/Loading <DIV><IMG> while loading the quiz
+
+X QuizOver detect, delay 1s timeout for user digestion, then swap to score state
+X QuizController have a data member for the current page id, then manage that hidden, then replaced
+	on subsequent state changes
+X Implement a font example
+X QuizController.showScore()
+	-> Application.quizReview()
+		-> refactor game-over logic
+	-> becomes more consistent looking...
+
+X Pull interaction code of View<click> -> Application to Model, pull App code into Model
+X ApplicationController cleaner page switching, pages hidden by default
+X HomePage list view graphic design
+X Application.qwizDirInit() -> collect.fetch.failure() => implement with a console.log("WARNING!")
+X LandingPage needs a list of all quizs via dir.php, render as a list of models
+	X ren QwizModel -> QuestionModel
+	X ren QwizView -> QuestionView
+	X ren QwizCollection -> QuestionCollection
+
+	X new QwizModel
+	X new QwizView
+	X new QwizCollection
+	X parsing response from dir.php
+	X code called for "home-page" rendering into <div id="qwiz-list-panel">
+
+X Move around .js files into their appropriate subdirs
+X selector style names "question_[container, letter]" renamed in .CSS and uses -> "answer"
+
+X dir.php lists the quiz directory
+X ScoreReview state needs a proper graphic design
+
+X Craft a Backbone Model for Question, Qwiz [Questions]
+X Craft a Backbone View which is
+X How to parse the fixture/test.json thru Backbone into a Collection
+X Backbone routing: Title, Quiz, Summary (matching views foreach routing state)
+X Pull over basic application structure, all current libs

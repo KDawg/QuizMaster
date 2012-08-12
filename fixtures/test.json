@@ -1,0 +1,129 @@
+{
+	"title": "Ken's Test Question Set",
+	"questions": [
+		{
+			"question": "Who created Superman?",
+			"answers": [
+				"Jack Kirby & Bob Kane",
+				"Bob Kane & Joe Shuster",
+				"Joe Shuster & Jerry Siegel",
+				"Jerry Siegel & Stan Lee"
+			],
+			"correct": 2,
+			"timeLimit": 15
+		},
+		{
+			"question": "What is the name of the dimensional plane where Kryptonian criminals were exiled for their crimes?",
+			"answers": [
+				"No Man's Land",
+				"Phantom Zone",
+				"Zimbardo's Prison",
+				"Bizarro World"
+			],
+			"correct": 1,
+			"timeLimit": 35
+		},
+{
+			"question": "Where did Luke and Obi-Wan met Han Solo?",
+			"answers": [
+				"Mos Espa",
+				"Mos Eisley",
+				"Tosche Station",
+				"Anchorhead"
+			],
+			"correct": 1,
+			"timeLimit": 30
+		},
+		{
+			"question": "Princess Leia is the Senator for which planet?",
+			"answers": [
+				"Naboo",
+				"Coruscant",
+				"Yavin 4",
+				"Alderaan"
+			],
+			"correct": 3,
+			"timeLimit": 30
+		},
+		{
+			"question": "What is the main object that everyone is looking for in \"Raiders of the Lost Ark\"?",
+			"answers": [
+				"Ark of the Covenant",
+				"Holy Grail",
+				"Noah's Ark",
+				"Magic Rocks"
+			],
+			"correct": 0,
+			"timeLimit": 30
+		},
+		{
+			"question": "In C++, in what order do the constructors get called?",
+			"answers": [
+				"Parent to child",
+				"Child to parent",
+				"Peer to peer"
+			],
+			"correct": 0,
+			"timeLimit": 35
+		},
+		{
+			"question": "What keyword makes a member visible to inherited classes and hidden from others?",
+			"answers": [
+				"private",
+				"protected",
+				"public"
+			],
+			"correct": 1,
+			"timeLimit": 30
+		},
+		{
+			"question": "Which cannot be used for computing rotation?",
+			"answers": [
+				"Translation",
+				"Matrix",
+				"Quaternion"
+			],
+			"correct": 0,
+			"timeLimit": 30
+		},
+		{
+			"question": "The “namespace” keyword helps solve what problem?",
+			"answers": [
+				"Template class specialization",
+				"Declaring pure-virtual classes",
+				"Avoids collisions between global identifiers"
+			],
+			"correct": 2,
+			"timeLimit": 30
+		},
+		{
+			"question": "Why would we pass a variable to a function by reference?",
+			"answers": [
+				"Avoid memory allocation and guarantees an initialized object",
+				"Offer a chance for “pointer arithmetic”",
+				"Protects against changes to the variable"
+			],
+			"correct": 0,
+			"timeLimit": 30
+		},
+		{
+			"question": "Order the following in terms of performance from fastest to slowest:",
+			"answers": [
+				"New, addition, square root",
+				"Square root, addition, new",
+				"Addition, square root, new"
+			],
+			"correct": 2
+		},
+		{
+			"question": "How do you normalize a 3D vector?",
+			"answers": [
+				"Set x, y, and z to one",
+				"Add x squared to y squared to z squared, then square root that sum",
+				"Divide each of its x, y, z components by its length"
+			],
+			"correct": 2,
+			"timeLimit": 0
+		}
+	]
+}
